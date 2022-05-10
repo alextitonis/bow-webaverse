@@ -269,10 +269,10 @@ export default e => {
       bowApp.scale.copy(app.scale);
       bowApp.updateMatrixWorld(); */
       
-      bowApp.dispatchEvent({
-        type: 'wearupdate',
-        wear,
-      });
+//       bowApp.dispatchEvent({
+//         type: 'wearupdate',
+//         wear,
+//       });
     }
     wearing = wear;
   });
