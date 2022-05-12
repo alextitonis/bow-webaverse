@@ -262,20 +262,16 @@ export default e => {
   });
   
   let wearing = false;
-//   useWear(e => {
-//     const {wear} = e;
+   useWear(e => {
+     const {wear} = e;
 //     if (bowApp) {
-//       /* bowApp.position.copy(app.position);
-//       bowApp.scale.copy(app.scale);
-//       bowApp.updateMatrixWorld(); */
-      
 //       bowApp.dispatchEvent({
 //         type: 'wearupdate',
 //         wear,
 //       });
 //     }
     wearing = wear;
-//   });
+   });
 
 
   let oldBowDrawSound=null; 
