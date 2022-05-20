@@ -264,6 +264,7 @@ export default e => {
   let wearing = false;
    useWear(e => {
      const {wear} = e;
+     console.log('FROM INSIDE BOW wear:', wear, 'e:', e)
 //     if (bowApp) {
 //       bowApp.dispatchEvent({
 //         type: 'wearupdate',
