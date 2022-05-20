@@ -215,7 +215,7 @@ export default e => {
       };
 
       bowApp.use = e => {
-        // console.log('got use', e);
+         console.log('got use', e);
         pendingArrowApp = _createArrowApp();
         scene.add(pendingArrowApp);
         
@@ -224,7 +224,7 @@ export default e => {
         pendingArrowApp.updateMatrixWorld(); */
       };
       bowApp.unuse = e => {
-        // console.log('got use', e);
+         console.log('got use', e);
         // const arrowApp = _createArrowApp();
         
         /* arrowApp.position.copy(bowApp.position);
@@ -264,14 +264,12 @@ export default e => {
   let wearing = false;
    useWear(e => {
      const {wear} = e;
-     console.log('FROM INSIDE BOW wear:', wear, 'e:', e)
      if (bowApp) {
        bowApp.dispatchEvent({
          type: 'wearupdate',
           player: useLocalPlayer(),
           app: bowApp,
           wear: wear,
-          location: "wear4inside",
        });
      }
     wearing = wear;
