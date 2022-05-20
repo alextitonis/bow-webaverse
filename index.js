@@ -268,7 +268,7 @@ export default e => {
      if (bowApp) {
        bowApp.dispatchEvent({
          type: 'wearupdate',
-          player: useLocalPlayer();,
+          player: useLocalPlayer(),
           app: bowApp,
           wear: wear,
           location: "wear4inside",
