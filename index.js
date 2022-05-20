@@ -265,12 +265,12 @@ export default e => {
    useWear(e => {
      const {wear} = e;
      console.log('FROM INSIDE BOW wear:', wear, 'e:', e)
-//     if (bowApp) {
-//       bowApp.dispatchEvent({
-//         type: 'wearupdate',
-//         wear,
-//       });
-//     }
+     if (bowApp) {
+       bowApp.dispatchEvent({
+         type: 'wearupdate',
+         wear,
+       });
+     }
     wearing = wear;
    });
 
