@@ -264,14 +264,14 @@ export default e => {
   let wearing = false;
    useWear(e => {
      const {wear} = e;
-     if (bowApp) {
+     /*if (bowApp) {
        bowApp.dispatchEvent({
          type: 'wearupdate',
           player: useLocalPlayer(),
           app: bowApp,
           wear: wear,
        });
-     }
+     }*/
     wearing = wear;
    });
 
